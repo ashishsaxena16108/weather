@@ -1,0 +1,28 @@
+.app-container{
+    background-color: aqua;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather-container{
+    background-color: bisque;
+    height: 85vh;
+    width: 70vw;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.left-container{
+   flex: 3;
+   background-color: blanchedalmond;
+   border-top-left-radius: 30px;
+   border-bottom-left-radius: 30px;
+}
+.right-container{
+   flex: 7;
+   background-color: navajowhite;
+   border-top-right-radius: 30px;
+   border-bottom-right-radius: 30px;
+}

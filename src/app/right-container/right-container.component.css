@@ -1,0 +1,283 @@
+.right-container{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   color: brown;
+}
+.navbar{
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+    font-weight: 600;
+}
+.right-container-data-box{
+    flex: 12;
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    margin-left: -50px;
+}
+.right-container-week-cards{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+  
+}
+.card{
+    width: 75px;
+    height: 95px;
+    background-color: rgb(246, 202, 119);
+    border-radius: 10px;
+    margin-left: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-weight: 500;
+}
+.card-day{
+    margin: 5px;
+    margin-top: 7px;
+}
+.card-temp-img img{
+    width: 40px;
+    height: 40px;
+}
+.card-temp-value{
+    margin: 5px;
+}
+
+.nav-bar-tabs{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    
+}
+.today{
+    margin-right: 10px;
+    color: #e7951a;
+}
+.week{
+    color: #e7951a;
+}
+.today:hover{
+    color: brown;
+    cursor: pointer;
+}
+.today-active{
+    color: brown;
+}
+.week:hover{
+    color: brown;
+    cursor: pointer;
+}
+.week-active{
+    color: brown;
+}
+.celsius{
+    margin-right: 10px;
+    border-radius: 400px;
+    padding-left:5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    background-color: beige;
+    color: brown;
+}
+.fahrenheit{
+    border-radius: 100px;
+    padding-left:5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    background-color: beige;
+    color: brown;
+}
+.celsius:hover{
+    color: antiquewhite;
+    background-color: brown;
+    cursor: pointer;
+}
+.fahrenheit:hover{
+    color: antiquewhite;
+    background-color: brown;
+    cursor: pointer;
+}
+.celsius-active{
+    color: antiquewhite;
+    background-color: brown;
+}
+.fahrenheit-active{
+    color: antiquewhite;
+    background-color: brown;
+}
+.underline{
+    width: 50px;
+    height: 1.7px;
+    background-color: brown;
+    margin-top: 1.3rem;
+}
+.underline-today{
+    transform: translate3d(-200%,0,0);
+    transition: 100ms;
+}
+.underline-week{
+    transform: translate3d(-90%,0,0);
+    transition: 100ms;
+}
+.nav-bar-metrics{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    font-weight: bolder;
+    font-size: larger;
+}
+.right-container-today-cards{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    
+  }
+.right-container-todays-highlight{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.right-container-todays-highlight-cards{
+    flex:10;
+    display: flex;
+    flex-direction: row;
+}
+.right-container-todays-highlight-title{
+    flex:2;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: large;
+    font-weight: bold;
+}
+.right-container-todays-highlight-card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(246, 202, 119);
+    height: 180px;
+    width: 200px;
+    margin: 5px;
+    font-size: 24px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+}
+.right-container-todays-highlight-card-title{
+    font-size: 18px;
+    margin: 10px;
+    font-weight: bold;
+
+}
+.gauge{
+    flex:2;
+    width:80%;
+    max-width: 180px;
+    font-size: 32px;
+    color: brown;
+    font-weight: 500;
+}
+.gauge_body{
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    background-color: #e6b05e;
+    position: relative;
+    border-top-left-radius:100% 200%;
+    border-top-right-radius: 100% 200%;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+.gauge_fill{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: inherit;
+    height: 150%;
+    background: #b36f09;
+    transform-origin: center top;
+    transform: rotate(0.25turn);
+    transition: transform 0.2s ease-out;
+}
+.gauge_cover{
+    width: 75%;
+    height:150%;
+    background: rgb(246, 202, 119);
+    border-radius: 50%;
+    position: absolute;
+    top:25%;
+    left:50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 35%;
+    box-sizing: border-box;
+    color: rgb(243, 144, 24);
+}
+.wind-status-value{
+   flex: 2;
+   font-size: 40px;
+   font-weight: 500;
+   text-align: center;
+   margin-top: 24px;
+}
+.unit{
+    font-size: 20px;
+}
+.wind-status-logo{
+   flex:1;
+}
+.sunrise-sunset-value{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.sunrise{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+}
+.sunrise-img{
+    flex: 1;
+}
+.sunrise-img img{
+    width: 50px;
+    height: 50px;
+}
+.sunrise-time{
+    flex:4;
+    margin-top: 10px;
+}
+.sunset{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+}
+.sunset-img{
+    flex: 1;
+}
+.sunset-img img{
+    width: 50px;
+    height: 50px;
+}
+.sunset-time{
+    flex:4;
+    margin-top: 10px;
+}
